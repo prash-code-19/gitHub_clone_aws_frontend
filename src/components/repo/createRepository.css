@@ -1,0 +1,50 @@
+.create-repository {
+  max-width: 640px;
+  margin: 32px auto;
+  padding: 24px;
+  color: #f1f6fd;
+}
+
+.create-repository form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.create-repository input:not([type="checkbox"]),
+.create-repository textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #3d444d;
+  border-radius: 6px;
+  background: #0d1117;
+  color: inherit;
+  font: inherit;
+}
+
+.create-repository textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.repository-visibility {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.create-repository button {
+  align-self: flex-start;
+  padding: 8px 16px;
+  border: 0;
+  border-radius: 6px;
+  background: #238636;
+  color: white;
+  cursor: pointer;
+}
+
+.create-repository button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
